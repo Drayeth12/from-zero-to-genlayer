@@ -48,7 +48,7 @@ Node.js (LTS)
 Docker Desktop (with WSL2 enabled on Windows)
 Python 3.10+
 Project Structure
-from-zero-to-genlayer/ │ ├── README.md ├── contracts/ │ └── dispute_resolver.py │ ├── frontend/ │ ├── index.html │ └── app.js │ └── assets/ └── screenshots/
+from-zero-to-genlayer/ │ ├── README.md ├── contracts/ │ └── dispute_resolver.py │ ├── frontend/ │ ├── index.html │ └── app.js 
 
 # Part 1: Setting Up GenLayer Studio
 In this section, we:
