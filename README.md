@@ -16,7 +16,7 @@ The Equivalence Principle
 A simple frontend using genlayer-js
 The goal is not to build a production-ready application, but to learn how GenLayer works by building something real.
 
-Why GenLayer?
+# Why GenLayer?
 Traditional blockchains execute deterministic smart contracts.
 They are excellent at handling strict rules but struggle with:
 
@@ -28,7 +28,7 @@ GenLayer introduces Intelligent Contracts — contracts that can reason using AI
 
 This tutorial explains these ideas in a practical way.
 
-What We Will Build
+# What We Will Build
 We will build a simple dispute resolution MVP:
 
 Two parties submit a dispute described in natural language
@@ -38,7 +38,7 @@ GenLayer reaches consensus on a verdict
 The decision and reasoning are returned to the user
 This use case is intentionally simple but showcases what makes GenLayer unique.
 
-Prerequisites
+# Prerequisites
 This tutorial assumes no prior GenLayer experience.
 
 You will need:
@@ -50,7 +50,7 @@ Python 3.10+
 Project Structure
 from-zero-to-genlayer/ │ ├── README.md ├── contracts/ │ └── dispute_resolver.py │ ├── frontend/ │ ├── index.html │ └── app.js │ └── assets/ └── screenshots/
 
-Part 1: Setting Up GenLayer Studio
+# Part 1: Setting Up GenLayer Studio
 In this section, we:
 
 Clone the GenLayer simulator
@@ -61,7 +61,7 @@ GenLayer Studio allows us to simulate the GenLayer network and test Intelligent 
 
 Common issue: Docker must be running before starting the simulator.
 
-Part 2: Understanding Optimistic Democracy & the Equivalence Principle
+# Part 2: Understanding Optimistic Democracy & the Equivalence Principle
 Optimistic Democracy (Intuitive Explanation)
 Instead of assuming contracts always execute correctly, GenLayer:
 
@@ -77,7 +77,8 @@ In our dispute resolver, this means:
 
 The decision is not based on one AI response
 Multiple perspectives contribute to the final verdict
-Part 3: Writing Our First Intelligent Contract (Python)
+
+# Part 3: Writing Our First Intelligent Contract (Python)
 We write a Python-based Intelligent Contract that:
 
 Accepts dispute text as input
@@ -87,7 +88,7 @@ This contract runs inside the GenLayer environment and participates in consensus
 
 The focus here is clarity, not complexity.
 
-Part 4: Running the Contract in GenLayer Studio
+# Part 4: Running the Contract in GenLayer Studio
 Using GenLayer Studio, we:
 
 Deploy the Intelligent Contract
@@ -96,7 +97,7 @@ Observe how decisions are produced
 Inspect reasoning output
 This step makes GenLayer concepts tangible.
 
-Part 5: Building a Simple Frontend with genlayer-js
+# Part 5: Building a Simple Frontend with genlayer-js
 To complete the dApp:
 
 We create a minimal frontend
@@ -130,7 +131,6 @@ Expand dispute logic
 Build more advanced GenLayer applications
 GenLayer enables many new types of applications that were not possible with traditional smart contracts.
 
-Disclaimer
+# Disclaimer
 This project is for educational purposes and demonstrates GenLayer concepts in a simplified way.
 
-cant this be my read me ??
