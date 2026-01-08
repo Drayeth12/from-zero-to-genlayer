@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenLayer AI Dispute Resolver</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; line-height: 1.6; background-color: #f8f9fa; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        textarea { height: 80px; }
+        button { background: #007bff; color: white; border: none; padding: 12px 20px; cursor: pointer; border-radius: 5px; width: 100%; font-weight: bold; }
+        #status { margin-top: 15px; font-style: italic; color: #666; }
+        #result { margin-top: 20px; padding: 15px; background: #e9ecef; border-left: 5px solid #28a745; display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> AI Dispute Resolver</h1>
+        <p>Powered by GenLayer Intelligent Contracts</p>
+
+        <label><b>Dispute ID:</b></label>
+        <input type="text" id="disputeId" placeholder="e.g. 101">
+
+        <label><b>Party A's Claim:</b></label>
+        <textarea id="claimA" placeholder="Describe the issue..."></textarea>
+
+        <label><b>Party B's Claim:</b></label>
+        <textarea id="claimB" placeholder="Describe the counter-claim..."></textarea>
+
+        <button onclick="solveDispute()">Ask AI Judge</button>
+        
+        <div id="status"></div>
+
+        <div id="result">
+            <strong>Verdict:</strong> <span id="verdict"></span><br><br>
+            <strong>Reasoning:</strong> <p id="reasoning" style="font-size: 0.9em;"></p>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
